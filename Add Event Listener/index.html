@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+        .comment {
+            background-color: aqua;
+            border: 3px solid red;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Click Event Handler</h1>
+
+            <!-- Option : 1 -->
+            <button onclick="console.log('First button clicked');">First</button>
+            <button onclick="console.log('2');">Second</button>
+            <button onclick="console.log('3');">Third</button>
+
+            <br><br>
+
+            <!-- Option : 2 -->
+            <button onclick="makeRed()">Make Red</button>
+
+            <br><br>
+
+            <!-- Option : 3 -->
+
+            <button id="make-blue">Make Blue</button>
+
+            <br><br>
+
+            <!-- Option : 4 -- add event listener -->
+
+            <button id="make-green">Make Green</button>
+
+        </section>
+
+        <br><br><br><br>
+
+
+        <!-- get input field and Change headline -->
+        <section>
+            <h3 id="h3-update">Input Your Name</h3>
+
+            <input id="update-input-field" type="text" placeholder="Your Name">
+
+            <button id="btn-update">Update</button>
+        </section>
+
+
+        <br><br><br><br>
+
+        <!-- -------------------------------------- -->
+        <!-- Make Comment Box -->
+        <!-- -------------------------------------- -->
+        <section>
+            <h1>My comment box</h1>
+            <div id="post-container">
+                <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae iusto
+                    consectetur
+                    nihil doloribus corporis aperiam sequi a cupiditate quibusdam!</p>
+                <p class="comment">Velit repudiandae, eum et accusantium reprehenderit delectus natus, ex animi error
+                    neque
+                    maxime dolores tempore sint nulla eos laboriosam expedita?</p>
+                <p class="comment">Adipisci, rem provident sapiente, facere modi quam animi, praesentium veniam fugit
+                    commodi libero. Necessitatibus minima quisquam, nostrum sequi nobis voluptatibus.</p>
+            </div>
+            <br><br>
+
+            <div>
+                <textarea id="comment-textarea" name="" id="" cols="50%" rows="2"></textarea>
+                <br>
+                <button id="btn-post">Post Comment</button>
+            </div>
+        </section>
+
+
+        <br><br><br>
+
+        <!-- --------------------------------------------------- -->
+        <!-- Delete -->
+        <!-- --------------------------------------------------- -->
+
+        <section>
+            <h2 id="delete-secret">My Secret Info</h2>
+
+            <input id="delete-input" placeholder="delete" type="text">
+
+            <button id="btn-delete" disabled>Delete</button>
+        </section>
+
+
+
+        <br><br><br>
+
+        <!-- --------------------------------------------------- -->
+        <!-- Event Delegation -->
+        <!-- --------------------------------------------------- -->
+
+        <section>
+
+            <h1>Event Delegate</h1>
+
+            <ol id="item-container">
+                <li class="item">Item 1</li>
+                <li class="item">item 2</li>
+                <li class="item">Item 3</li>
+                <li class="item">Item 4</li>
+                <li class="item">Item 5</li>
+            </ol>
+
+            <button id="btn-item">Add New Item</button>
+        </section>
+
+    </main>
+
+    <script src="js/event.js"></script>
+</body>
+
+</html>
